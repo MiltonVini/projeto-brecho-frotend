@@ -10,7 +10,7 @@ A ideia é evoluir a aplicação com base nas necessidades reais de pequenos ven
 
 ## 💡 Motivação
 
-Este é um projeto pessoal en desenvolvimento para gerenciamento de vendas em um brechó, com foco em controle de sacolas (bags), clientes e produtos. A ideia surgiu ao observar de perto a rotina da minha esposa, que é dona de um brechó. Pude entender algumas das dificuldades e limitações que ela enfrenta no dia a dia, principalmente por ser uma trabalhadora autônoma e realizar muitas tarefas de forma manual.
+Este é um projeto pessoal em desenvolvimento para gerenciamento de vendas em um brechó, com foco em controle de sacolas (bags), clientes e produtos. A ideia surgiu ao observar de perto a rotina da minha esposa, que é dona de um brechó. Pude entender algumas das dificuldades e limitações que ela enfrenta no dia a dia, principalmente por ser uma trabalhadora autônoma e realizar muitas tarefas de forma manual.
 
 A falta de automatização em processos simples acaba gerando perda de tempo, retrabalho e até risco de esquecer alguma venda. Um dos principais pontos que me chamou a atenção foi o **gerenciamento de sacolas** dos clientes.
 
