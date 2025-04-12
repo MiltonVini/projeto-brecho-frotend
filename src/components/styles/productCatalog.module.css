@@ -1,0 +1,93 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 1rem;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .row.header {
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: default;
+  }
+  
+  .row:hover:not(.header) {
+    background-color: #f9f9f9;
+  }
+  
+  .checkbox {
+    display: flex;
+    justify-content: center;
+  }
+    
+
+  .searchWrapper {
+    position: relative;
+    width: 300px;
+    margin-bottom: 16px;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .searchBar {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  
+  .searchBar:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  }
+
+  .statusBadge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .sold {
+    background-color: #ffdede;
+    color: #c04343;
+    border: 1px solid #c70000;
+  }
+  
+  .available {
+    background-color: #e0f8e9;
+    color: #64c283;
+    border: 1px solid #1a7f3c;
+  }
+  
+  
+  
+  
