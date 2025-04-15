@@ -13,7 +13,7 @@ export function Bags() {
     }
 
     const isDeliveredFieldClass = (isDelivered: boolean) => {
-        const className = isDelivered ? 'bg-[#84D19B]' : 'bg-[#D1CB84]'
+        const className = isDelivered ? 'bg-[#DFF3E7] text-green-800 border-[#84D19B]' : 'bg-[#FDFCD4] text-yellow-800 border-[#F4F493]'
 
         return className
     }
@@ -56,7 +56,7 @@ export function Bags() {
                                         </button>
                                     </td>
                                     <td className="px-6 py-3 text-center">
-                                        <span className={`px-4 py-2 text-white rounded-sm ${isDeliveredFieldClass(bag.is_delivered)}`}>
+                                        <span className={`px-4 py-2 rounded-xl ${isDeliveredFieldClass(bag.is_delivered)}`}>
                                             {bag.is_delivered ? 'Entregue' : 'Entrega a Combinar'}
                                         </span>
                                     </td>
