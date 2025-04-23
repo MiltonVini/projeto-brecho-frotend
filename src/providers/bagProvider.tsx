@@ -8,9 +8,10 @@ interface BagProviderProps {
 }
 
 export interface ClientProps {
-  id: string;
-  name: string;
-  instagram_name: string;
+  id: string
+  name: string
+  instagram_name: string
+  email: string
 }
 
 export interface BagProductsProps {
@@ -184,8 +185,6 @@ export function BagProvider({ children }: BagProviderProps) {
   }, [])
 
   const onRegisterClientFormSubmit = async (data: IClientFormInput) => {
-    console.log(data)
-
     const response = await api.post('/clients', {
       name: data.name,
       instagram_name: data.instagram_user,

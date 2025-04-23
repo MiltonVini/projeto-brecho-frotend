@@ -27,12 +27,12 @@ export function Sales() {
         try {
             await insertSalesFormSubmit(data)
             setShowModal(true)
-            reset()
         } catch (error) {
             console.error(error)
         } finally {
             setTimeout(() => {
                 setShowModal(false)
+                reset()
             }, 3000)
         }
     }

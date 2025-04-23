@@ -5,6 +5,7 @@ export interface ClientProps {
     id: string
     name: string
     instagram_name: string
+    email: string
 }
 
 export interface BagProductsProps {
