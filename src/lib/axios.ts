@@ -1,9 +1,14 @@
-import axios from "axios";
+import axios from "axios"
+
+
+const apiUrl = process.env.REACT_APP_API_URL
+const emailApiUrl = process.env.REACT_APP_EMAIL_SERVICE_API_URL
+
 
 export const api = axios.create({
-    baseURL: 'http://localhost:3333'
+    baseURL: apiUrl
 })
 
 export const emailServiceApi = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: emailApiUrl
 })
