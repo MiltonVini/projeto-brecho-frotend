@@ -77,7 +77,7 @@ export function Clients() {
       
                 <button
                   type="submit"
-                  className="bg-[#CFECF4] text-dark px-4 py-2 rounded-sm hover:bg-blue-700 transition-colors"
+                  className="bg-[#CFECF4] text-dark px-4 py-2 rounded-sm hover:bg-[#B0CDEE] transition-colors"
                 >
                     Cadastrar
                 </button>

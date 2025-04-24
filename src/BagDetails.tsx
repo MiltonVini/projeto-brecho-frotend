@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { Sidebar } from "./components/sidebar";
 import { UseBag } from "./hooks/bagHooks";
 import { useEffect } from "react";
-import { format } from "date-fns";
+import { differenceInCalendarDays, format } from "date-fns";
 import { Toast } from "./components/toast";
 import { useEmail } from "./hooks/emailHooks";
 import { Label } from "./components/label";
@@ -53,13 +53,13 @@ export function BagDetails() {
                                 <div className="flex flex-row gap-12 mt-6 ml-12">
                                     <div className="flex flex-col items-center justify-center bg-white shadow-sm border border-gray-200 rounded-lg p-4 w-48 h-26">
                                         <p className="text-gray-600 text-sm">Total em Vendas</p>
-                                        <p className="text-xl font-bold">R$ YY</p>
+                                        <p className="text-xl font-bold">{`R$ ${bagDetails.total_amount}`}</p>
                                     </div>
 
                                     <div className="flex flex-col items-center justify-center bg-white shadow-sm border border-gray-200 rounded-lg p-4 w-48 h-26">
                                         <p className="text-gray-600 text-sm">Sacolinha Ativa desde</p>
                                         <p className="text-xl font-bold">{format(new Date(bagDetails.created_at), 'dd/MM/yyyy')}</p>
-                                        <p className="text-sm text-gray-500">X Dias</p>
+                                        <p className="text-sm text-gray-500">{differenceInCalendarDays(new Date(), new Date(bagDetails.created_at))} Dias</p>
                                     </div>
             
                                     <div className="flex flex-col items-center ml-auto">

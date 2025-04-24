@@ -9,7 +9,7 @@ export function Sidebar() {
             <hr />
             <ul>
                 <li>
-                    <Link to="/" className={styles.linkItem}>
+                    <Link to="/bags" className={styles.linkItem}>
                         <Bag size={22} /> Sacolinhas
                     </Link>
                 </li>
