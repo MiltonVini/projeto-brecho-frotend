@@ -28,6 +28,7 @@ export interface BagsDetailsProps {
   created_at: Date
   is_delivered: boolean
   delivered_at: Date | null
+  total_amount: number
   bagProducts: BagProductsProps[]
 }
 
