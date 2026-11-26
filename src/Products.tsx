@@ -2,12 +2,12 @@ import { useForm } from "react-hook-form";
 import { Label } from "./components/label";
 import { NumberInput } from "./components/numberInput";
 import { RadioButtonInput } from "./components/radioButtonInput";
-import { Sidebar } from "./components/sidebar";
 import { TextInput } from "./components/textInput";
 import { UseBag } from "./hooks/bagHooks";
 import { ICreateProductFormInput } from "./providers/bagProvider";
 import { useState } from "react";
 import { Modal } from "./components/modal";
+import { Layout } from "./components/layout";
 
 export function Products() {
     const [showModal, setShowModal] = useState(false)
@@ -30,9 +30,8 @@ export function Products() {
     }
 
     return (
-        <div>
-          <Sidebar />
-            <div className="ml-64 p-6 w-full">
+        <Layout>
+            <div>
                 <div className="max-w-xl bg-white p-6 rounded-xl shadow-md">
                     <h3 className="text-2xl font-semibold mb-6">Cadastrar Produto</h3>
 
@@ -102,6 +101,6 @@ export function Products() {
                 </div>
 
             </div>
-        </div>
+        </Layout>
       )
 }

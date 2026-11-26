@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Sidebar } from "./components/sidebar";
+import { Layout } from "./components/layout";
 import { UseBag } from "./hooks/bagHooks";
 import { useEffect } from "react";
 import { differenceInCalendarDays, format } from "date-fns";
@@ -36,10 +36,9 @@ export function BagDetails() {
 
 
     return (
-        <div className="flex">
-            <Sidebar />
+        <Layout>
             {bagDetails && (
-                            <div className="ml-64 p-4 w-full">
+                            <div>
                             <h3 className="text-2xl mb-2">{`Sacolinha ${client?.instagram_name}`}</h3>
             
                             <div className="w-5/6 p-4 border-2 border-gray-300 rounded rounded-sm">
@@ -155,6 +154,6 @@ export function BagDetails() {
                             </div>
                         </div>
             )}
-        </div>
+        </Layout>
     )
 }

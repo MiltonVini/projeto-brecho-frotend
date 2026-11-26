@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Sidebar } from "./components/sidebar";
+import { Layout } from "./components/layout";
 import { UseBag } from "./hooks/bagHooks";
 import { useState } from "react";
 import { Modal } from "./components/modal";
@@ -31,9 +31,8 @@ export function Clients() {
     }
 
     return (
-        <div>
-          <Sidebar />
-          <div className="ml-64 p-6 w-full">
+        <Layout>
+          <div>
             <h3 className="text-2xl font-semibold mb-6">Cadastrar Cliente</h3>
       
             <div className="max-w-xl bg-white p-6 rounded-xl shadow-md">
@@ -90,7 +89,7 @@ export function Clients() {
 
             </div>
           </div>
-        </div>
+        </Layout>
       )
       
 
