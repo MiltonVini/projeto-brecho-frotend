@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import { Sidebar } from "./components/sidebar"
+import { Layout } from "./components/layout"
 import { UseBag } from "./hooks/bagHooks"
 import { useEffect, useState } from "react"
 import { SelectInput } from "./components/selectInput"
@@ -58,9 +58,8 @@ export function Sales() {
     
 
     return (
-        <div>
-            <Sidebar/>
-            <div className="ml-64 p-6 m2 w-5/6">
+        <Layout>
+            <div>
                 <h3 className="text-2xl font-semibold mb-2">Inserir uma Venda</h3>
 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -149,6 +148,6 @@ export function Sales() {
                 </div>
 
             </div>
-        </div>
+        </Layout>
     )
 }
